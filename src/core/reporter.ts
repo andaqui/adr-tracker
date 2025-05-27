@@ -45,7 +45,7 @@ function generateTextReport(result: AdrScanResult): string {
   let report = '\n';
   
   // Summary section
-  report += chalk.bold.blue('=== ADR Checker Summary ===\n\n');
+  report += chalk.bold.blue('=== ADR Tracker Summary ===\n\n');
   report += `${chalk.green('✓')} Found ${chalk.bold(documents.length.toString())} ADR documents\n`;
   report += `${chalk.green('✓')} Found ${chalk.bold(references.length.toString())} ADR references in code\n`;
   report += `${chalk.yellow('!')} Detected ${chalk.bold(issues.length.toString())} issues\n\n`;
@@ -157,7 +157,7 @@ function generateHtmlReport(result: AdrScanResult): string {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ADR Checker Report</title>
+  <title>ADR Tracker Report</title>
   <style>
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -240,7 +240,7 @@ function generateHtmlReport(result: AdrScanResult): string {
   </style>
 </head>
 <body>
-  <h1>ADR Checker Report</h1>
+  <h1>ADR Tracker Report</h1>
   
   <div class="summary">
     <h2>Summary</h2>

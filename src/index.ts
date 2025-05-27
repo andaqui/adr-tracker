@@ -1,5 +1,5 @@
 /**
- * ADR Checker - A tool to track and validate Architecture Decision Records
+ * ADR Tracker - A tool to track and validate Architecture Decision Records
  */
 
 // Export core functionality

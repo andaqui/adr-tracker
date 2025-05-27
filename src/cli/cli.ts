@@ -3,7 +3,7 @@ import path from 'path';
 import { loadConfig, createDefaultConfig } from '../core/config';
 import { scanProject } from '../core/scanner';
 import { generateReport } from '../core/reporter';
-import { AdrCheckerOptions } from '../types';
+import { AdrTrackerOptions } from '../types';
 import chalk from 'chalk';
 
 // Package information
@@ -16,7 +16,7 @@ export function createProgram(): Command {
   const program = new Command();
 
   program
-    .name('adr-checker')
+    .name('adr-tracker')
     .description('CLI tool to track and validate Architecture Decision Records (ADRs) in projects')
     .version(packageJson.version);
 
@@ -32,7 +32,7 @@ export function createProgram(): Command {
       try {
         console.log(chalk.blue('🔍 Scanning project for ADR references...'));
         
-        const config = await loadConfig(options as AdrCheckerOptions);
+        const config = await loadConfig(options as AdrTrackerOptions);
         const result = await scanProject(config);
         
         const format = options.format as 'text' | 'json' | 'html';
@@ -58,8 +58,8 @@ export function createProgram(): Command {
 
   program
     .command('init')
-    .description('Initialize a new ADR checker configuration file')
-    .option('-p, --path <path>', 'Path to create configuration file', '.adr-checker.json')
+    .description('Initialize a new ADR tracker configuration file')
+    .option('-p, --path <path>', 'Path to create configuration file', '.adr-tracker.json')
     .action(async (options) => {
       try {
         await createDefaultConfig(options.path);
@@ -81,7 +81,7 @@ export function createProgram(): Command {
       try {
         console.log(chalk.blue('📝 Validating ADR documents...'));
         
-        const config = await loadConfig(options as AdrCheckerOptions);
+        const config = await loadConfig(options as AdrTrackerOptions);
         const result = await scanProject(config);
         
         // Filter only document-related issues

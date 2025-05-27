@@ -1,5 +1,5 @@
 /**
- * Types for ADR Checker
+ * Types for ADR Tracker
  */
 
 export interface AdrReference {
@@ -63,7 +63,7 @@ export interface AdrConfig {
   ignorePatterns: string[];
 }
 
-export interface AdrCheckerOptions {
+export interface AdrTrackerOptions {
   config?: string;
   adrDir?: string;
   sourceDir?: string;

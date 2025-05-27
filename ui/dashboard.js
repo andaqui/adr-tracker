@@ -1,6 +1,6 @@
 /**
- * ADR Checker Dashboard
- * JavaScript for the ADR Checker Dashboard UI
+ * ADR Tracker Dashboard
+ * JavaScript for the ADR Tracker Dashboard UI
  */
 
 // Global state

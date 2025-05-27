@@ -1,0 +1,26 @@
+{
+  "adrDir": "docs/adr",
+  "sourceDir": "src",
+  "languages": {
+    "javascript": {
+      "extensions": [
+        ".js",
+        ".jsx",
+        ".ts",
+        ".tsx"
+      ],
+      "commentPatterns": [
+        "// ADR-\\d+",
+        "/\\* ADR-\\d+ \\*/",
+        "\\* @adr ADR-\\d+"
+      ]
+    }
+  },
+  "outputFormat": "text",
+  "ignorePatterns": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".git/**"
+  ]
+}

@@ -1,9 +1,9 @@
 import fs from 'fs/promises';
 import path from 'path';
-import { AdrConfig, AdrCheckerOptions } from '../types';
+import { AdrConfig, AdrTrackerOptions } from '../types';
 
 /**
- * Default configuration for ADR Checker
+ * Default configuration for ADR Tracker
  */
 export const DEFAULT_CONFIG: AdrConfig = {
   adrDir: 'docs/adr',
@@ -28,7 +28,7 @@ export const DEFAULT_CONFIG: AdrConfig = {
 /**
  * Load configuration from a file or use defaults
  */
-export async function loadConfig(options: AdrCheckerOptions): Promise<AdrConfig> {
+export async function loadConfig(options: AdrTrackerOptions): Promise<AdrConfig> {
   let config = { ...DEFAULT_CONFIG };
   
   // If config file is specified, load it

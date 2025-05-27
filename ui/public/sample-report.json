@@ -2,42 +2,42 @@
   "references": [
     {
       "id": "ADR-0001",
-      "file": "/Users/andresaquino/code/ard-checker/src/example/server.ts",
+      "file": "/Users/andresaquino/code/ard-tracker/src/example/server.ts",
       "line": 3,
       "column": 1,
       "commentType": "/\\*\\s*@adr\\s*ADR-(\\d+)/"
     },
     {
       "id": "ADR-0001",
-      "file": "/Users/andresaquino/code/ard-checker/src/example/server.ts",
+      "file": "/Users/andresaquino/code/ard-tracker/src/example/server.ts",
       "line": 26,
       "column": 0,
       "commentType": "/\\/\\/\\s*ADR-(\\d+)/"
     },
     {
       "id": "ADR-0003",
-      "file": "/Users/andresaquino/code/ard-checker/src/example/database.ts",
+      "file": "/Users/andresaquino/code/ard-tracker/src/example/database.ts",
       "line": 3,
       "column": 1,
       "commentType": "/\\*\\s*@adr\\s*ADR-(\\d+)/"
     },
     {
       "id": "ADR-0003",
-      "file": "/Users/andresaquino/code/ard-checker/src/example/database.ts",
+      "file": "/Users/andresaquino/code/ard-tracker/src/example/database.ts",
       "line": 7,
       "column": 0,
       "commentType": "/\\/\\/\\s*ADR-(\\d+)/"
     },
     {
       "id": "ADR-0002",
-      "file": "/Users/andresaquino/code/ard-checker/src/example/App.tsx",
+      "file": "/Users/andresaquino/code/ard-tracker/src/example/App.tsx",
       "line": 3,
       "column": 1,
       "commentType": "/\\*\\s*@adr\\s*ADR-(\\d+)/"
     },
     {
       "id": "ADR-0002",
-      "file": "/Users/andresaquino/code/ard-checker/src/example/App.tsx",
+      "file": "/Users/andresaquino/code/ard-tracker/src/example/App.tsx",
       "line": 7,
       "column": 0,
       "commentType": "/\\/\\/\\s*ADR-(\\d+)/"
@@ -47,28 +47,20 @@
     {
       "id": "ADR-0002",
       "title": "Use React for Frontend Development",
-      "path": "/Users/andresaquino/code/ard-checker/docs/adr/0002-react-for-frontend.md",
+      "path": "/Users/andresaquino/code/ard-tracker/docs/adr/0002-react-for-frontend.md",
       "status": "accepted",
       "date": "2023-06-10",
-      "tags": [
-        "frontend",
-        "react",
-        "ui"
-      ],
+      "tags": ["frontend", "react", "ui"],
       "content": "# Use React for Frontend Development\n\nStatus: Accepted\nDate: 2023-06-10\nTags: frontend, react, ui\n\n## Context\n\nWe need to choose a frontend framework that is widely adopted, has good community support, and provides a component-based architecture.\n\n## Decision\n\nWe will use React for all frontend development.\n\n## Consequences\n\n- Component-based architecture for better code organization\n- Large ecosystem of libraries and tools\n- Good developer experience with JSX\n- Need for additional state management solutions\n",
       "references": []
     },
     {
       "id": "ADR-0001",
       "title": "Use TypeScript for Backend Development",
-      "path": "/Users/andresaquino/code/ard-checker/docs/adr/0001-use-typescript-for-backend.md",
+      "path": "/Users/andresaquino/code/ard-tracker/docs/adr/0001-use-typescript-for-backend.md",
       "status": "accepted",
       "date": "2023-05-15",
-      "tags": [
-        "backend",
-        "typescript",
-        "nodejs"
-      ],
+      "tags": ["backend", "typescript", "nodejs"],
       "content": "# Use TypeScript for Backend Development\n\nStatus: Accepted\nDate: 2023-05-15\nTags: backend, typescript, nodejs\n\n## Context\n\nWe need to choose a programming language for our backend services that provides type safety and good developer experience.\n\n## Decision\n\nWe will use TypeScript for all backend development.\n\n## Consequences\n\n- Improved type safety and developer experience\n- Better IDE support and code completion\n- Slight learning curve for developers not familiar with TypeScript\n- Need for compilation step before running code\n",
       "references": []
     }
@@ -77,14 +69,14 @@
     {
       "type": "missing_document",
       "message": "Referenced ADR ADR-0003 does not exist",
-      "file": "/Users/andresaquino/code/ard-checker/src/example/database.ts",
+      "file": "/Users/andresaquino/code/ard-tracker/src/example/database.ts",
       "line": 3,
       "adrId": "ADR-0003"
     },
     {
       "type": "missing_document",
       "message": "Referenced ADR ADR-0003 does not exist",
-      "file": "/Users/andresaquino/code/ard-checker/src/example/database.ts",
+      "file": "/Users/andresaquino/code/ard-tracker/src/example/database.ts",
       "line": 7,
       "adrId": "ADR-0003"
     }

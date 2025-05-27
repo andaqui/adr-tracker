@@ -236,7 +236,7 @@ module.exports = {
     {
       apply: (compiler) => {
         compiler.hooks.afterEmit.tapAsync(
-          "AdrCheckerPlugin",
+          "AdrTrackerPlugin",
           async (compilation, callback) => {
             try {
               const result = await scanProject();
@@ -309,8 +309,8 @@ When implementing an architectural decision, reference the relevant ADR in your 
 // src/components/UserProfile.jsx
 
 // ADR-0015: Using React Context for state management
-import React, { useContext } from 'react';
-import { UserContext } from '../context/UserContext';
+import React, { useContext } from "react";
+import { UserContext } from "../context/UserContext";
 
 const UserProfile = () => {
   const { user } = useContext(UserContext);
@@ -370,8 +370,8 @@ Once available, you would configure it through VS Code settings:
 ```json
 // .vscode/settings.json
 {
-  "adrChecker.adrDirectory": "docs/adr",
-  "adrChecker.validateOnSave": true
+  "adrTracker.adrDirectory": "docs/adr",
+  "adrTracker.validateOnSave": true
 }
 ```
 
