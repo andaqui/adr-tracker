@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .status-badge {
+    @apply px-2 py-1 rounded-full text-xs font-semibold;
+  }
+  
+  .status-accepted {
+    @apply bg-adr-accepted/20 text-adr-accepted;
+  }
+  
+  .status-proposed {
+    @apply bg-adr-proposed/20 text-adr-proposed;
+  }
+  
+  .status-rejected {
+    @apply bg-adr-rejected/20 text-adr-rejected;
+  }
+  
+  .status-deprecated {
+    @apply bg-adr-deprecated/20 text-adr-deprecated;
+  }
+  
+  .status-unknown {
+    @apply bg-adr-unknown/20 text-adr-unknown;
+  }
+  
+  .issue-item {
+    @apply p-3 mb-2 rounded-md text-sm;
+  }
+  
+  .issue-error {
+    @apply bg-red-100 text-red-800;
+  }
+  
+  .issue-warning {
+    @apply bg-yellow-100 text-yellow-800;
+  }
+  
+  .tag {
+    @apply inline-block bg-gray-200 rounded-full px-2 py-1 text-xs font-semibold text-gray-700 mr-1;
+  }
+}
